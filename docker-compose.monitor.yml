@@ -41,8 +41,6 @@ services:
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
       - '--web.console.templates=/usr/share/prometheus/consoles'
     user: root
-    ports:
-      - 9050:9090
     networks:
       - monitoring
 
@@ -54,8 +52,6 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker:/var/lib/docker:ro
       - /dev/disk:/dev/disk:ro
-    ports:
-      - 9051:8080
     networks:
       - monitoring
 
@@ -70,7 +66,5 @@ services:
       - '--path.rootfs=/rootfs'
       - '--path.sysfs=/host/sys'
       - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
-    ports:
-      - 9052:9100
     networks:
       - monitoring
