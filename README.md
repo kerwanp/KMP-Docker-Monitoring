@@ -4,7 +4,7 @@ This is a simple Docker Environment for monitoring server and containers.
 
 ![alt preview.png](preview.png)
 
-## Install
+## Install
 
 First, add the environment variable to configure the Grafana password :
 ```bash
