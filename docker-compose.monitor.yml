@@ -30,19 +30,6 @@ services:
       - monitoring
       - frontend
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    volumes:
-      - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
-    ports:
-      - 9002:80
-    environment:
-      - PMA_HOSTS=${PMA_HOSTS}
-      - PMA_PORTS=${PMA_PORTS}
-      - PMA_ARBITRARY=${PMA_ARBITRARY}
-    networks:
-      - frontend
-
   prometheus:
     image: prom/prometheus
     volumes:
