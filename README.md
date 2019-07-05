@@ -14,8 +14,8 @@ export GRAFANA_ADMIN_PASSWORD="your-password"
 Then clone the repository and start the docker environment.
 
 ```bash
-git clone git@github.com:kerwanp/KMP-Docker-Monitoring.git
-cd KMP-Docker-Monitoring
+git clone git@github.com:kerwanp/kmp-docker-monitoring.git
+cd kmp-docker-monitoring
 docker-compose up
 ```
 
